@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is responsible for the clients checkout">
+    <title>Checkout RCHLO</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <section id="page-header">
+                <div class="upper-section">
+                    <h1>Ótima escolha!</h1>
+                    <p>Obrigado por comprar na RCHLO! <br> Preencha seus dados para efetivar a compra.</p>
+                </div>
+            </section>
+        </header>
+    
+        <main>
+            <section id="item-description">
+                    <div class="item-info-data">
+    
+                        <div class="order-title">
+                            <h2>Sua Compra</h2>
+                        </div>
+    
+                        <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
+                            alt="Camiseta Manga Curta" title="Camiseta Manga Curta Simpsons" id="t-shirt-image">
+    
+                        <article id="item-description">
+                            <div class="item-description-area">
+                                <strong>Produto</strong>
+                                <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+    
+                                <strong>Cor</strong>
+                                <p>Branco</p>
+    
+                                <strong>Tamanho</strong>
+                                <p>G</p>
+    
+                                <strong>Preço:</strong>
+                                <p>R$ 69,90</p>
+                            </div>
+                        </article>
+                    </div>
+            </section>
+
+            <section id="item-quantity">
+                <article>
+                    <div id="item-quantity-info">
+                        
+                    </div>
+                </article>
+            </section>
+    
+    
+            <section id="page-form">
+                <article>
+                    <nav>
+                        <div class="form-area">
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <legend>Dados Pessoais</legend>
+    
+                                    <label>Nome completo:</label>
+                                    <input type="text" name="userFullName" id="userFullName" required> <br><br>
+    
+                                    <label>Email:</label>
+                                    <input type="email" name="userEmail" id="userEmail" required> <br><br>
+    
+                                    <label for="">CPF:</label>
+                                    <input type="text" name="userCPF" id="userCPF" maxlength="11" required> <br><br>
+    
+                                    <span id="checkbox-area">
+                                        <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox" required>
+                                        <label>Quero receber a newsletter da RCHLO!</label>
+                                    </span>
+                                </fieldset>
+    
+                                <br>
+    
+                                <fieldset>
+                                    <legend>Cartão de Crédito</legend>
+    
+                                    <label for="">Número (CVV):</label>
+                                    <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3">
+    
+                                    <br><br>
+    
+                                    <label for="">Bandeira:</label>
+                                    <select name="credit-card-flag">
+                                        <option value="MasterCard">MasterCard</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="AmericanExpress">American Express</option>
+                                    </select>
+    
+                                    <br><br>
+    
+                                    <label for="">Vencimento:</label>
+                                    <input type="date" name="card-valid" id="card-valid">
+                                </fieldset>
+    
+                                <br>
+    
+                                <span id="button-area">
+                                    <button class="order-confirmation">Confirmar Pedido</button>
+                                </span>
+    
+                            </form>
+                        </div>
+                    </nav>
+                </article>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
