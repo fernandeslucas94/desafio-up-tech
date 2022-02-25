@@ -124,15 +124,251 @@
         font-size: 1.5rem;
     }
 
-    #item-quantity-info {
+    .item-quantity-info {
         border: 0.5px solid #CCC;
         border-radius: 0.3rem;
 
         height: 163px;
 
         margin-top: 25px;
+        
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
+    .item-quantity-info input, select {
+        width: 60px;
+        height: 52px;
+    }
+
+    .item-quantity-info input {
+        width: 72px;
+        height: 70px;
+    }
+    
+    .item-quantity-info input, select, label {
+        margin-left: 5px;
+    }
+    
+
+    /* Form Area */
+    .form-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    label {
+        width: 80px;
+
+        font-size: 1.5rem;
+    }
+
+    #credit-card-flag {
+        height: 30px;
+        width: 85px;
+    }
+
+    #checkbox-area {
+        display: inline-block;
+        height: 40px; 
+        width: 90vw;
+    }
+
+    #checkbox-area input {
+        margin-top: 7px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    #checkbox-area label {
+        margin-top: -10px;
+    }
+
+    form {
+        width: 95vw;
+    }
+
+    fieldset {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+    }
+
+    fieldset legend {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    .order-confirmation {
+        padding: 8px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        border-radius: 0.3rem;
+        border: 1px solid #CCC;
+
+        height: 40px;
+        width: 130px;
+
+        font-size: 1.3rem;
+
+        background-color: transparent;
+    }
+
+    #button-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Upper Section Styles */
+    .upper-section {
+        background-color: var(--upper-section-background);
+
+        height: 18rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-left: 2rem;
+    }
+
+    .upper-section h1 {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    .upper-section p {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+
+
+
+    /* Item Section Styles*/
+    #t-shirt-image {
+        width: 370px;
+        height: 470px;
+
+        margin-bottom: 14px;
+    }
+
+    .item-info-data {
+        border: 0.5px solid #CCC;
+        border-radius: 0.5rem;
+
+        width: 95vw;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 16px;
+    }
+
+    .item-info-data img {
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+
+        padding: 0.5rem;
+    }
+
+    .order-title {
+        background-color: var(--default-background-color);
+        
+        height: 6rem;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin-bottom: 1.8rem;
+    }
+
+    .order-title h2 {
+        font-size: 3.1rem;
+        font-weight: 400;
+
+        margin-left: 1.5rem;
+    }
+
+    .item-description-area {
+        height: 250px;
+        width: 375px;
+
+        padding: 10px;
+
+        margin-bottom: 15px;
+    }
+
+    .item-description-area strong {
+        font-size: 1.8rem;
+    }
+
+    .item-description-area p {
+        margin-top: 6px;
+        margin-bottom: 6px;
+
+        font-size: 1.5rem;
+    }
+
+    .item-quantity-info {
+        border: 0.5px solid #CCC;
+        border-radius: 0.3rem;
+
+        height: 163px;
+
+        margin-top: 25px;
+        
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .item-quantity-info input, select {
+        width: 60px;
+        height: 52px;
+    }
+
+    .item-quantity-info input {
+        width: 72px;
+        height: 70px;
+    }
+    
+    .item-quantity-info input, select, label {
+        margin-left: 5px;
+    }
+    
 
     /* Form Area */
     .form-area {

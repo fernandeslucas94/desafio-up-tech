@@ -53,8 +53,14 @@
 
             <section id="item-quantity">
                 <article>
-                    <div id="item-quantity-info">
-                        
+                    <div class="item-quantity-info">
+                        <label for="">Quantidade:</label> <br>
+                        <select id="item-quantity-selection">
+                            <option value=""></option>
+                        </select> <br><br>
+
+                        <label>Total:</label> <br>
+                        <input type="text" name="price-total" id="price-total">
                     </div>
                 </article>
             </section>
@@ -94,7 +100,7 @@
                                     <br><br>
     
                                     <label for="">Bandeira:</label>
-                                    <select name="credit-card-flag">
+                                    <select name="credit-card-flag" id="credit-card-flag">
                                         <option value="MasterCard">MasterCard</option>
                                         <option value="Visa">Visa</option>
                                         <option value="AmericanExpress">American Express</option>
@@ -120,6 +126,7 @@
         </main>
     </div>
 
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
