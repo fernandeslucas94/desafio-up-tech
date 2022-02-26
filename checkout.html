@@ -74,26 +74,19 @@
                                 <fieldset>
                                     <legend>Dados Pessoais</legend>
 
-                                    <div class="name-field">
-                                        <label>Nome completo:</label>
-                                        <input type="text" name="userFullName" id="userFullName" required>
+                                    <div class="personal-data-container">
+                                        <div class="personal-data-label">
+                                            <label>Nome completo:</label> <br><br>
+                                            <label>Email:</label> <br><br>
+                                            <label for="">CPF:</label>
+                                        </div>
+                                        
+                                        <div class="personal-data-fields">
+                                            <input type="text" name="userFullName" id="userFullName" required> <br><br>
+                                            <input type="email" name="userEmail" id="userEmail" required> <br><br>
+                                            <input type="text" name="userCPF" id="userCPF" maxlength="11" placeholder="000.000.000-00" required>
+                                        </div>
                                     </div>
-
-                                    <br>
-
-                                    <div class="email-field">
-                                        <label>Email:</label>
-                                        <input type="email" name="userEmail" id="userEmail" required>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="cpf-field">
-                                        <label for="">CPF:</label>
-                                        <input type="text" name="userCPF" id="userCPF" maxlength="11" required>
-                                    </div>
-
-                                    <br>
 
                                     <div class="checkbox-area">
                                         <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox"
@@ -107,27 +100,22 @@
                                 <fieldset>
                                     <legend>Cartão de Crédito</legend>
 
-                                    <div class="cvv-card">
-                                        <label for="">Número (CVV):</label>
-                                        <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3">
-                                    </div>
+                                    <div class="credit-card-area-container">
+                                        <div class="credit-card-labels">
+                                            <label for="">Número (CVV):</label> <br>
+                                            <label for="">Bandeira:</label> <br>
+                                            <label for="">Vencimento:</label>
+                                        </div>
 
-                                    <br>
-
-                                    <div class="card-flag">
-                                        <label for="">Bandeira:</label>
-                                        <select name="credit-card-flag" id="credit-card-flag">
-                                            <option value="MasterCard">MasterCard</option>
-                                            <option value="Visa">Visa</option>
-                                            <option value="AmericanExpress">American Express</option>
-                                        </select>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="card-good-through">
-                                        <label for="">Vencimento:</label>
-                                        <input type="date" name="card-valid" id="card-valid">
+                                        <div class="credit-card-input">
+                                            <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3"> <br>
+                                            <select name="credit-card-flag" id="credit-card-flag"> <br>
+                                                <option value="MasterCard">MasterCard</option> 
+                                                <option value="Visa">Visa</option>
+                                                <option value="AmericanExpress">American Express</option>
+                                            </select> <br>
+                                            <input type="date" name="card-valid" id="card-valid">
+                                        </div>
                                     </div>
                                 </fieldset>
 

@@ -57,8 +57,8 @@
 
     /* Item Section Styles*/
     #t-shirt-image {
-        width: 370px;
-        height: 470px;
+        width: 95%;
+        height: 70%;
 
         margin-bottom: 14px;
     }
@@ -173,6 +173,25 @@
     
 
     /* Form Area */
+
+    form {
+        width: 95vw;
+    }
+
+    fieldset {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 175px;
+    }
+
+    fieldset legend {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
     .form-area {
         display: flex;
         align-items: center;
@@ -181,40 +200,58 @@
     }
 
     label {
-        width: 80px;
+        width: 120px;
 
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .personal-data-container {
+        display: flex;
+    }
+
+    .personal-data-fields {
+        margin-left: 30px;
+    }
+
+    .personal-data-fields input {
+        height: 20px;
+        width: 170px;
+
+        padding: 5px;
+    }
+    
+    .checkbox-area {
+        margin-top: 16px;
+        margin-left: 5px;
+    }
+
+    .credit-card-area-container {
+        display: flex;
+
+        padding-top: 20px;
+    }
+
+    .credit-card-labels {
+        display: flex;
+        flex-direction: column;
+
+        width: 120px;
+    }
+
+    .credit-card-input {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 30px;
+    }
+
+    .credit-card-input input, select {
+        height: 20px;
     }
 
     #credit-card-flag {
         height: 30px;
         width: 85px;
-    }
-
-    .name-field,
-    .email-field,
-    .cpf-field {
-        height: 25px;
-        width: 100%;
-
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .name-field input {
-        height: 21px;
-        width: 210px;
-    }
-
-    .email-field input {
-        height: 21px;
-        width: 210px;
-    }
-
-    .cpf-field input {
-        height: 21px;
-        width: 210px;
     }
 
     .cvv-card,
@@ -232,22 +269,6 @@
     .card-flag,
     .card-good-through input {
         margin-left: 15px;
-    }
-
-    form {
-        width: 95vw;
-    }
-
-    fieldset {
-        padding: 12px;
-
-        border-radius: 0.5rem;
-        border: 0.3px solid grey;
-    }
-
-    fieldset legend {
-        font-size: 1.7rem;
-        font-weight: 500;
     }
 
     .order-confirmation {
@@ -289,7 +310,7 @@
         justify-content: center;
     }
 
-    
+
     /* Upper Section Styles */
     .upper-section {
         background-color: var(--upper-section-background);
@@ -318,8 +339,8 @@
 
     /* Item Section Styles*/
     #t-shirt-image {
-        width: 370px;
-        height: 470px;
+        width: 95%;
+        height: 70%;
 
         margin-bottom: 14px;
     }
@@ -434,6 +455,25 @@
     
 
     /* Form Area */
+
+    form {
+        width: 95vw;
+    }
+
+    fieldset {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 175px;
+    }
+
+    fieldset legend {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
     .form-area {
         display: flex;
         align-items: center;
@@ -442,40 +482,58 @@
     }
 
     label {
-        width: 80px;
+        width: 120px;
 
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .personal-data-container {
+        display: flex;
+    }
+
+    .personal-data-fields {
+        margin-left: 30px;
+    }
+
+    .personal-data-fields input {
+        height: 20px;
+        width: 170px;
+
+        padding: 5px;
+    }
+    
+    .checkbox-area {
+        margin-top: 16px;
+        margin-left: 5px;
+    }
+
+    .credit-card-area-container {
+        display: flex;
+
+        padding-top: 20px;
+    }
+
+    .credit-card-labels {
+        display: flex;
+        flex-direction: column;
+
+        width: 120px;
+    }
+
+    .credit-card-input {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 30px;
+    }
+
+    .credit-card-input input, select {
+        height: 20px;
     }
 
     #credit-card-flag {
         height: 30px;
         width: 85px;
-    }
-
-    .name-field,
-    .email-field,
-    .cpf-field {
-        height: 25px;
-        width: 100%;
-
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .name-field input {
-        height: 21px;
-        width: 210px;
-    }
-
-    .email-field input {
-        height: 21px;
-        width: 210px;
-    }
-
-    .cpf-field input {
-        height: 21px;
-        width: 210px;
     }
 
     .cvv-card,
@@ -493,22 +551,6 @@
     .card-flag,
     .card-good-through input {
         margin-left: 15px;
-    }
-
-    form {
-        width: 95vw;
-    }
-
-    fieldset {
-        padding: 12px;
-
-        border-radius: 0.5rem;
-        border: 0.3px solid grey;
-    }
-
-    fieldset legend {
-        font-size: 1.7rem;
-        font-weight: 500;
     }
 
     .order-confirmation {
