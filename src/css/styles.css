@@ -219,6 +219,14 @@
         font-size: 1.7rem;
     }
 
+    .input:valid {
+        border: 2px solid #000;
+    }
+
+    .input:invalid {
+        border: 2px solid #FF0000;
+    }
+
     .personal-data-container {
         display: flex;
 
@@ -404,14 +412,13 @@
 
         margin-left: 1.5rem;
 
-        border: 1px solid #000;
-        border-radius: 0.3rem;
+        border-left: 2.5px solid #919191;
 
-        padding: 4px;
+        padding-left: 7px;
     }
 
     .item-description-area {
-        height: 290px;
+        height: 310px;
         width: 375px;
 
         padding: 20px;
@@ -427,14 +434,16 @@
     .item-description-area strong {
         font-size: 1.8rem;
 
-        border-bottom: 1px solid #000;
+        border-left: 2.5px solid #919191;
+        border-bottom: 2.5px solid #919191;
+        border-bottom-left-radius: 6px;
 
         margin-bottom: 3.5px;
-        padding-bottom: 2px;
+        padding-left: 4px;
     }
 
     .item-description-area p {
-        margin-top: 4px;
+        margin-top: 9px;
         margin-bottom: 14px;
 
         font-size: 1.5rem;
@@ -444,7 +453,7 @@
         border: 0.5px solid #CCC;
         border-radius: 0.3rem;
 
-        height: 220px;
+        height: 230px;
 
         margin-top: 25px;
         
@@ -460,6 +469,11 @@
         height: 35px;
     }
 
+    .item-quantity-info select {
+        width: 80px;
+        height: 25px;
+    }
+
     .item-quantity-info input {
         width: 72px;
         height: 36px;
@@ -471,6 +485,14 @@
 
     .item-quantity-info label {
         font-size: 1.7rem;
+    }
+
+    #price-total {
+        font-size: 1.4rem;
+
+        padding: 0.6rem;
+
+        width: 95px;
     }
     
 
@@ -486,11 +508,11 @@
         border-radius: 0.5rem;
         border: 0.3px solid grey;
 
-        height: 175px;
+        height: 230px;
     }
 
     fieldset legend {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         font-weight: 500;
     }
 
@@ -504,11 +526,21 @@
     label {
         width: 120px;
 
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+    }
+
+    .input:valid {
+        border: 2px solid #000;
+    }
+
+    .input:invalid {
+        border: 2px solid #FF0000;
     }
 
     .personal-data-container {
         display: flex;
+
+        padding: 8px;
     }
 
     .personal-data-fields {
@@ -516,7 +548,7 @@
     }
 
     .personal-data-fields input {
-        height: 20px;
+        height: 28px;
         width: 170px;
 
         padding: 5px;
@@ -548,7 +580,7 @@
     }
 
     .credit-card-input input, select {
-        height: 20px;
+        height: 23px;
     }
 
     #credit-card-flag {
@@ -580,14 +612,18 @@
         margin-bottom: 15px;
 
         border-radius: 0.3rem;
-        border: 1.8px solid #CCC;
+        border: 0.6px solid #CCC;
 
         height: 40px;
-        width: 130px;
+        width: 165px;
 
-        font-size: 1.3rem;
+        font-size: 1.4rem;
 
-        background-color: transparent;
+        background-color: #EEE;
+
+        color: #000;
+
+        text-transform: uppercase;
     }
 
     #button-area {
