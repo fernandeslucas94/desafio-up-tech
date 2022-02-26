@@ -192,20 +192,48 @@
         width: 85px;
     }
 
-    #checkbox-area {
-        display: inline-block;
-        height: 40px; 
-        width: 90vw;
+    .name-field,
+    .email-field,
+    .cpf-field {
+        height: 25px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
     }
 
-    #checkbox-area input {
-        margin-top: 7px;
-        margin-left: 5px;
-        margin-right: 10px;
+    .name-field input {
+        height: 21px;
+        width: 210px;
     }
 
-    #checkbox-area label {
-        margin-top: -10px;
+    .email-field input {
+        height: 21px;
+        width: 210px;
+    }
+
+    .cpf-field input {
+        height: 21px;
+        width: 210px;
+    }
+
+    .cvv-card,
+    .card-flag,
+    .card-good-through {
+        height: 25px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cvv-card,
+    .card-flag,
+    .card-good-through input {
+        margin-left: 15px;
     }
 
     form {

@@ -21,34 +21,34 @@
                 </div>
             </section>
         </header>
-    
+
         <main>
             <section id="item-description">
-                    <div class="item-info-data">
-    
-                        <div class="order-title">
-                            <h2>Sua Compra</h2>
-                        </div>
-    
-                        <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
-                            alt="Camiseta Manga Curta" title="Camiseta Manga Curta Simpsons" id="t-shirt-image">
-    
-                        <article id="item-description">
-                            <div class="item-description-area">
-                                <strong>Produto</strong>
-                                <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
-    
-                                <strong>Cor</strong>
-                                <p>Branco</p>
-    
-                                <strong>Tamanho</strong>
-                                <p>G</p>
-    
-                                <strong>Preço:</strong>
-                                <p>R$ 69,90</p>
-                            </div>
-                        </article>
+                <div class="item-info-data">
+
+                    <div class="order-title">
+                        <h2>Sua Compra</h2>
                     </div>
+
+                    <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
+                        alt="Camiseta Manga Curta" title="Camiseta Manga Curta Simpsons" id="t-shirt-image">
+
+                    <article id="item-description">
+                        <div class="item-description-area">
+                            <strong>Produto</strong>
+                            <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+
+                            <strong>Cor</strong>
+                            <p>Branco</p>
+
+                            <strong>Tamanho</strong>
+                            <p>G</p>
+
+                            <strong>Preço:</strong>
+                            <p>R$ 69,90</p>
+                        </div>
+                    </article>
+                </div>
             </section>
 
             <section id="item-quantity">
@@ -64,8 +64,8 @@
                     </div>
                 </article>
             </section>
-    
-    
+
+
             <section id="page-form">
                 <article>
                     <nav>
@@ -73,51 +73,70 @@
                             <form action="" method="post">
                                 <fieldset>
                                     <legend>Dados Pessoais</legend>
-    
-                                    <label>Nome completo:</label>
-                                    <input type="text" name="userFullName" id="userFullName" required> <br><br>
-    
-                                    <label>Email:</label>
-                                    <input type="email" name="userEmail" id="userEmail" required> <br><br>
-    
-                                    <label for="">CPF:</label>
-                                    <input type="text" name="userCPF" id="userCPF" maxlength="11" required> <br><br>
-    
-                                    <span id="checkbox-area">
-                                        <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox" required>
+
+                                    <div class="name-field">
+                                        <label>Nome completo:</label>
+                                        <input type="text" name="userFullName" id="userFullName" required>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="email-field">
+                                        <label>Email:</label>
+                                        <input type="email" name="userEmail" id="userEmail" required>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="cpf-field">
+                                        <label for="">CPF:</label>
+                                        <input type="text" name="userCPF" id="userCPF" maxlength="11" required>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="checkbox-area">
+                                        <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox"
+                                            required>
                                         <label>Quero receber a newsletter da RCHLO!</label>
-                                    </span>
+                                    </div>
                                 </fieldset>
-    
+
                                 <br>
-    
+
                                 <fieldset>
                                     <legend>Cartão de Crédito</legend>
-    
-                                    <label for="">Número (CVV):</label>
-                                    <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3">
-    
-                                    <br><br>
-    
-                                    <label for="">Bandeira:</label>
-                                    <select name="credit-card-flag" id="credit-card-flag">
-                                        <option value="MasterCard">MasterCard</option>
-                                        <option value="Visa">Visa</option>
-                                        <option value="AmericanExpress">American Express</option>
-                                    </select>
-    
-                                    <br><br>
-    
-                                    <label for="">Vencimento:</label>
-                                    <input type="date" name="card-valid" id="card-valid">
+
+                                    <div class="cvv-card">
+                                        <label for="">Número (CVV):</label>
+                                        <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3">
+                                    </div>
+
+                                    <br>
+
+                                    <div class="card-flag">
+                                        <label for="">Bandeira:</label>
+                                        <select name="credit-card-flag" id="credit-card-flag">
+                                            <option value="MasterCard">MasterCard</option>
+                                            <option value="Visa">Visa</option>
+                                            <option value="AmericanExpress">American Express</option>
+                                        </select>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="card-good-through">
+                                        <label for="">Vencimento:</label>
+                                        <input type="date" name="card-valid" id="card-valid">
+                                    </div>
                                 </fieldset>
-    
+
                                 <br>
-    
+
                                 <span id="button-area">
                                     <button class="order-confirmation">Confirmar Pedido</button>
                                 </span>
-    
+
                             </form>
                         </div>
                     </nav>
