@@ -74,6 +74,8 @@
         align-items: center;
 
         margin-top: 16px;
+
+        padding: 10px;
     }
 
     .item-info-data img {
@@ -109,16 +111,15 @@
 
     .item-description-area {
         height: 310px;
-        width: 375px;
+        width: 95%;
 
         padding: 20px;
 
         margin-bottom: 15px;
+        margin-left: 3%;
         
         border: 0.5px solid #CCC;
         border-radius: 0.3rem;
-
-        margin-bottom: 12px;
     }
 
     .item-description-area strong {
@@ -419,16 +420,15 @@
 
     .item-description-area {
         height: 310px;
-        width: 375px;
+        width: 95%;
 
         padding: 20px;
 
         margin-bottom: 15px;
+        margin-left: 2%;
         
         border: 0.5px solid #CCC;
         border-radius: 0.3rem;
-
-        margin-bottom: 12px;
     }
 
     .item-description-area strong {
@@ -624,6 +624,706 @@
         color: #000;
 
         text-transform: uppercase;
+    }
+
+    #button-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Upper Section Styles */
+    .upper-section {
+        background-color: var(--upper-section-background);
+
+        height: 18rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-left: 2rem;
+    }
+
+    .upper-section h1 {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    .upper-section p {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+
+    /* Item Section Styles*/
+    #t-shirt-image {
+        width: 95%;
+        height: 70%;
+
+        margin-bottom: 14px;
+    }
+
+    .item-info-data {
+        border: 0.5px solid #CCC;
+        border-radius: 0.5rem;
+
+        width: 270px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 16px;
+    }
+
+    .item-info-data img {
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+
+        padding: 0.5rem;
+    }
+
+    .order-title {
+        background-color: var(--default-background-color);
+        
+        height: 7rem;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin-bottom: 1.8rem;
+    }
+
+    .order-title h2 {
+        font-size: 3.1rem;
+        font-weight: 400;
+
+        margin-left: 1.5rem;
+
+        border-left: 2.5px solid #919191;
+
+        padding-left: 7px;
+    }
+
+    .item-description-area {
+        height: 310px;
+        width: 95%;
+
+        padding: 20px;
+
+        margin-bottom: 15px;
+        margin-left: 3%;
+        
+        border: 0.5px solid #CCC;
+        border-radius: 0.3rem;
+    }
+
+    .item-description-area strong {
+        font-size: 1.6rem;
+
+        border-left: 2.5px solid #919191;
+        border-bottom: 2.5px solid #919191;
+        border-bottom-left-radius: 6px;
+
+        margin-bottom: 3.5px;
+        padding-left: 4px;
+    }
+
+    .item-description-area p {
+        margin-top: 9px;
+        margin-bottom: 14px;
+
+        font-size: 1.3rem;
+    }
+
+    .item-quantity-info {
+        border: 0.5px solid #CCC;
+        border-radius: 0.3rem;
+
+        height: 180px;
+        width: 610px;
+
+        /* margin-top: 0px; */
+
+        top: 197px;
+        left: 310px;
+        
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        position: absolute;
+    }
+
+    .item-quantity-info input, select {
+        width: 68px;
+        height: 35px;
+    }
+
+    .item-quantity-info select {
+        width: 80px;
+        height: 25px;
+    }
+
+    .item-quantity-info input {
+        width: 72px;
+        height: 36px;
+    }
+    
+    .item-quantity-info input, select, label {
+        margin-left: 5px;
+    }
+
+    .item-quantity-info label {
+        font-size: 1.7rem;
+    }
+
+    #price-total {
+        font-size: 1.4rem;
+
+        padding: 0.6rem;
+
+        width: 95px;
+    }
+    
+
+    /* Form Area */
+
+    form {
+        width: 95vw;
+    }
+
+    fieldset {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 230px;
+        width: 480px;
+    }
+
+    #personal-data {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 230px;
+        width: 610px;
+
+        position: absolute;
+
+        top: 420px;
+        left: 310px;
+    }
+
+    #credit-card-data {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 230px;
+        width: 610px;
+
+        position: absolute;
+
+        top: 710px;
+        left: 310px;
+    }
+
+    fieldset legend {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .form-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    label {
+        width: 120px;
+
+        font-size: 1.7rem;
+    }
+
+    .input:valid {
+        border: 2px solid #000;
+    }
+
+    .input:invalid {
+        border: 2px solid #FF0000;
+    }
+
+    .personal-data-container {
+        display: flex;
+
+        padding: 8px;
+    }
+
+    .personal-data-fields {
+        margin-left: 30px;
+    }
+
+    .personal-data-fields input {
+        height: 28px;
+        width: 170px;
+
+        padding: 5px;
+    }
+    
+    .checkbox-area {
+        margin-top: 16px;
+        margin-left: 5px;
+    }
+
+    .credit-card-area-container {
+        display: flex;
+
+        padding-top: 20px;
+    }
+
+    .credit-card-labels {
+        display: flex;
+        flex-direction: column;
+
+        width: 120px;
+    }
+
+    .credit-card-input {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 30px;
+    }
+
+    .credit-card-input input, select {
+        height: 27px;
+        width: 130px;
+    }
+
+    #credit-card-flag {
+        height: 27px;
+        width: 125px;
+    }
+
+    .cvv-card,
+    .card-flag,
+    .card-good-through {
+        height: 25px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cvv-card,
+    .card-flag,
+    .card-good-through input {
+        margin-left: 15px;
+    }
+
+    .order-confirmation {
+        padding: 8px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        border-radius: 0.3rem;
+        border: 0.6px solid #CCC;
+
+        height: 40px;
+        width: 165px;
+
+        font-size: 1.4rem;
+
+        background-color: #EEE;
+
+        color: #000;
+
+        text-transform: uppercase;
+    }
+
+    #button-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 2560px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Upper Section Styles */
+    .upper-section {
+        background-color: var(--upper-section-background);
+
+        height: 18rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding-left: 2rem;
+    }
+
+    .upper-section h1 {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    .upper-section p {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+
+    /* Item Section Styles*/
+    #t-shirt-image {
+        width: 95%;
+        height: 70%;
+
+        margin-bottom: 14px;
+    }
+
+    .item-info-data {
+        border: 0.5px solid #CCC;
+        border-radius: 0.5rem;
+
+        width: 270px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 16px;
+    }
+
+    .item-info-data img {
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+
+        padding: 0.5rem;
+    }
+
+    .order-title {
+        background-color: var(--default-background-color);
+        
+        height: 7rem;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin-bottom: 1.8rem;
+    }
+
+    .order-title h2 {
+        font-size: 3.1rem;
+        font-weight: 400;
+
+        margin-left: 1.5rem;
+
+        border-left: 2.5px solid #919191;
+
+        padding-left: 7px;
+    }
+
+    .item-description-area {
+        height: 310px;
+        width: 95%;
+
+        padding: 20px;
+
+        margin-bottom: 15px;
+        margin-left: 3%;
+        
+        border: 0.5px solid #CCC;
+        border-radius: 0.3rem;
+    }
+
+    .item-description-area strong {
+        font-size: 1.6rem;
+
+        border-left: 2.5px solid #919191;
+        border-bottom: 2.5px solid #919191;
+        border-bottom-left-radius: 6px;
+
+        margin-bottom: 3.5px;
+        padding-left: 4px;
+    }
+
+    .item-description-area p {
+        margin-top: 9px;
+        margin-bottom: 14px;
+
+        font-size: 1.3rem;
+    }
+
+    .item-quantity-info {
+        border: 0.5px solid #CCC;
+        border-radius: 0.3rem;
+
+        height: 180px;
+        width: 868px;
+
+        /* margin-top: 0px; */
+
+        top: 197px;
+        left: 330px;
+        
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        position: absolute;
+    }
+
+    .item-quantity-info input, select {
+        width: 68px;
+        height: 35px;
+    }
+
+    .item-quantity-info select {
+        width: 80px;
+        height: 25px;
+    }
+
+    .item-quantity-info input {
+        width: 72px;
+        height: 36px;
+    }
+    
+    .item-quantity-info input, select, label {
+        margin-left: 5px;
+    }
+
+    .item-quantity-info label {
+        font-size: 1.7rem;
+    }
+
+    #price-total {
+        font-size: 1.4rem;
+
+        padding: 0.6rem;
+
+        width: 95px;
+    }
+    
+
+    /* Form Area */
+
+    form {
+        width: 95vw;
+    }
+
+    fieldset {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 230px;
+        width: 480px;
+    }
+
+    #personal-data {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 230px;
+        width: 425px;
+
+        position: absolute;
+
+        top: 420px;
+        left: 330px;
+    }
+
+    #credit-card-data {
+        padding: 12px;
+
+        border-radius: 0.5rem;
+        border: 0.3px solid grey;
+
+        height: 230px;
+        width: 425px;
+
+        position: absolute;
+
+        top: 420px;
+        left: 770px;
+    }
+
+    fieldset legend {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .form-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    label {
+        width: 120px;
+
+        font-size: 1.7rem;
+    }
+
+    .input:valid {
+        border: 2px solid #000;
+    }
+
+    .input:invalid {
+        border: 2px solid #FF0000;
+    }
+
+    .personal-data-container {
+        display: flex;
+
+        padding: 8px;
+    }
+
+    .personal-data-fields {
+        margin-left: 30px;
+    }
+
+    .personal-data-fields input {
+        height: 28px;
+        width: 170px;
+
+        padding: 5px;
+    }
+    
+    .checkbox-area {
+        margin-top: 16px;
+        margin-left: 5px;
+    }
+
+    .credit-card-area-container {
+        display: flex;
+
+        padding-top: 20px;
+    }
+
+    .credit-card-labels {
+        display: flex;
+        flex-direction: column;
+
+        width: 120px;
+    }
+
+    .credit-card-input {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 30px;
+    }
+
+    .credit-card-input input, select {
+        height: 27px;
+        width: 130px;
+    }
+
+    #credit-card-flag {
+        height: 27px;
+        width: 125px;
+    }
+
+    .cvv-card,
+    .card-flag,
+    .card-good-through {
+        height: 25px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cvv-card,
+    .card-flag,
+    .card-good-through input {
+        margin-left: 15px;
+    }
+
+    .order-confirmation {
+        padding: 8px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        border-radius: 0.3rem;
+        border: 0.6px solid #CCC;
+
+        height: 40px;
+        width: 165px;
+
+        font-size: 1.4rem;
+
+        background-color: #EEE;
+
+        color: #000;
+
+        text-transform: uppercase;
+
+        position: absolute;
+
+        top: 670px;
+        left: 690px;
     }
 
     #button-area {
