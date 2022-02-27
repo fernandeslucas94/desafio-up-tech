@@ -4,22 +4,26 @@ for (let i = 1; i <= 99; i++) {
     elements += `<option value="${i}">${i}</option>`;
 }
 
-document.getElementById("item-quantity-selection").innerHTML = elements;
+document.getElementById("item-quantity-select").innerHTML = elements;
 
 
 
 
 // Here we are making the calculation for knows the price considering the number of items wich are being bougth
-function calcTotalPrice() {
-    let itemPrice = document.querySelector('#price-total').value;
-    let numberOfItems = document.querySelector('#item-quantity-selection').value;
+let price = 69.90;
+let quantity = document.querySelector("#item-quantity-select");
+let totalValue = document.querySelector("#total");
 
-    if (numberOfItems > 1) {
-        return itemPrice * 1;
-    }
+function calcPrice() {
+    let selectedValue = quantity.value;
+    let total = price * selectedValue;
+
+    totalValue.innerHTML = total.toFixed(2);
 }
 
-calcTotalPrice();
+calcPrice();
+
+quantity.addEventListener("change", calcPrice);
 
 
 

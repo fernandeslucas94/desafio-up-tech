@@ -1157,27 +1157,19 @@
         position: absolute;
     }
 
-    .item-quantity-info input, select {
-        width: 68px;
-        height: 35px;
+    .item-quantity-info p {
+        font-size: 1.6rem;
+
+        margin-bottom: 10px;
     }
 
-    .item-quantity-info select {
-        width: 80px;
-        height: 25px;
-    }
+    .item-quantity-info span {
 
-    .item-quantity-info input {
-        width: 72px;
-        height: 36px;
-    }
-    
-    .item-quantity-info input, select, label {
-        margin-left: 5px;
-    }
+        width: 90px;
 
-    .item-quantity-info label {
-        font-size: 1.7rem;
+        padding: 0.8rem;
+
+        font-size: 1.5rem;
     }
 
     #price-total {
