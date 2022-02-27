@@ -709,6 +709,10 @@
         margin-left: 14px;
     }
 
+    figure {
+        margin-left: 1.3rem;
+    }
+
     .item-info-data img {
         border: 1px solid grey;
         border-radius: 0.5rem;
@@ -1064,6 +1068,10 @@
         align-items: center;
 
         margin-top: 16px;
+    }
+
+    figure {
+        margin-left: 1.3rem;
     }
 
     .item-info-data img {
