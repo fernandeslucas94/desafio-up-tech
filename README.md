@@ -1,2 +1,1 @@
-This project it's being developed for the selective process for Up!Tech.
-##
+### This project is developer for the Up!Tech program from Riachuelo!
