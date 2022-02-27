@@ -93,11 +93,13 @@
     
     
                                                 <input type="email" name="userEmail" id="userEmail" maxlength="300"
-                                                    oninvalid="setCustomValidity('informe seu email corretamente')"
+                                                    oninvalid="setCustomValidity('Informe seu email corretamente')"
                                                     oninput="setCustomValidity('')" required> <br><br>
     
                                                 <input type="text" name="userCPF" id="userCPF" maxlength="14"
-                                                    placeholder="000.000.000-00" pattern="[0-9]{11}" required>
+                                                    placeholder="000.000.000-00" pattern="[0-9]{11}" 
+                                                    oninvalid="setCustomValidity('Informe seu CPF')"
+                                                    oninput="setCustomValidity('')" required>
                                             </div>
                                         </div>
     

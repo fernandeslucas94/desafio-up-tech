@@ -41,13 +41,11 @@ function validation() {
     if (userFullName.value == "" || userEmail.value == "" || userCPF.value == "") {
 
         alert("Informe seus dados completos!");
-        return;
     }
 
     if (cardCVV.value == "" || cardFlag.value == "" || cardGoodThru.value == "") {
 
         alert("Preencha as informações do cartão de crédito")
-        return;
 
     } else {
         alert("Pedido efetuado com sucesso!");
