@@ -51,105 +51,105 @@
                 </div>
             </section>
 
-            <section id="item-quantity">
-                <article>
-                    <div class="item-quantity-info">
-                        <label for="">Quantidade:</label> <br>
-                        <select id="item-quantity-selection">
-                            <option value=""></option>
-                        </select> <br><br>
-
-                        <label>Total:</label> <br>
-                        <input type="text" name="price-total" id="price-total" value="R$ 69,90">
-                    </div>
-                </article>
-            </section>
-
-
-            <section id="page-form">
-                <article>
-                    <nav>
-                        <div class="form-area">
-                            <form action="" method="post">
-                                <fieldset id="personal-data">
-                                    <legend>Dados Pessoais</legend>
-
-                                    <div class="personal-data-container">
-                                        <div class="personal-data-label">
-                                            <label>Nome completo:</label> <br><br>
-                                            <label>Email:</label> <br><br>
-                                            <label for="">CPF:</label>
-                                        </div>
-
-                                        <div class="personal-data-fields">
-                                            <input type="text" name="userFullName" id="userFullName" maxlength="200"
-                                                oninvalid="setCustomValidity('Por favor, informe seu nome completo')"
-                                                oninput="setCustomValidity('')" required> <br><br>
-
-
-                                            <input type="email" name="userEmail" id="userEmail" maxlength="300"
-                                                oninvalid="setCustomValidity('informe seu email corretamente')"
-                                                oninput="setCustomValidity('')" required> <br><br>
-
-                                            <input type="text" name="userCPF" id="userCPF" maxlength="14"
-                                                placeholder="000.000.000-00" pattern="[0-9]{11}" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="checkbox-area">
-                                        <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox">
-                                        <label>Quero receber a newsletter da RCHLO!</label>
-                                    </div>
-                                </fieldset>
-
-                                <br>
-
-                                <fieldset id="credit-card-data">
-                                    <legend>Cartão de Crédito</legend>
-
-                                    <div class="credit-card-area-container">
-                                        <div class="credit-card-labels">
-                                            <label for="">Número (CVV):</label> <br>
-                                            <label for="">Bandeira:</label> <br>
-                                            <label for="">Vencimento:</label>
-                                        </div>
-
-                                        <div class="credit-card-input">
-
-                                            <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3"
-                                                pattern="{3}">
-
-                                            <br>
-
-                                            <select name="credit-card-flag" id="credit-card-flag"> <br>
-                                                <option value="MasterCard">MasterCard</option>
-                                                <option value="Visa">Visa</option>
-                                                <option value="AmericanExpress">American Express</option>
-                                            </select>
-
-                                            <br>
-
-                                            <input type="date" name="card-valid" id="card-good-thru">
-
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <br>
-
-                                <span id="button-area">
-                                    <button class="order-confirmation" onclick="validation()">Confirmar Pedido</button>
-                                </span>
-
-                            </form>
+            <div class="quantity-and-form-container">
+                <section id="item-quantity">
+                    <article>
+                        <div class="item-quantity-info">
+                            <label for="">Quantidade:</label> <br>
+                            <select id="item-quantity-selection">
+                                <option value=""></option>
+                            </select> <br><br>
+    
+                            <label>Total:</label> <br>
+                            <input type="text" name="price-total" id="price-total" value="R$ 69,90">
                         </div>
-                    </nav>
-                </article>
-            </section>
+                    </article>
+                </section>
+                
+                <section id="page-form">
+                    <article>
+                        <nav>
+                            <div class="form-area">
+                                <form action="" method="post">
+                                    <fieldset id="personal-data">
+                                        <legend>Dados Pessoais</legend>
+    
+                                        <div class="personal-data-container">
+                                            <div class="personal-data-label">
+                                                <label>Nome completo:</label> <br><br>
+                                                <label>Email:</label> <br><br>
+                                                <label for="">CPF:</label>
+                                            </div>
+    
+                                            <div class="personal-data-fields">
+                                                <input type="text" name="userFullName" id="userFullName" maxlength="200"
+                                                    oninvalid="setCustomValidity('Por favor, informe seu nome completo')"
+                                                    oninput="setCustomValidity('')" required> <br><br>
+    
+    
+                                                <input type="email" name="userEmail" id="userEmail" maxlength="300"
+                                                    oninvalid="setCustomValidity('informe seu email corretamente')"
+                                                    oninput="setCustomValidity('')" required> <br><br>
+    
+                                                <input type="text" name="userCPF" id="userCPF" maxlength="14"
+                                                    placeholder="000.000.000-00" pattern="[0-9]{11}" required>
+                                            </div>
+                                        </div>
+    
+                                        <div class="checkbox-area">
+                                            <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox">
+                                            <label>Quero receber a newsletter da RCHLO!</label>
+                                        </div>
+                                    </fieldset>
+    
+                                    <br>
+    
+                                    <fieldset id="credit-card-data">
+                                        <legend>Cartão de Crédito</legend>
+    
+                                        <div class="credit-card-area-container">
+                                            <div class="credit-card-labels">
+                                                <label for="">Número (CVV):</label> <br>
+                                                <label for="">Bandeira:</label> <br>
+                                                <label for="">Vencimento:</label>
+                                            </div>
+    
+                                            <div class="credit-card-input">
+    
+                                                <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3"
+                                                    pattern="{3}">
+    
+                                                <br>
+    
+                                                <select name="credit-card-flag" id="credit-card-flag"> <br>
+                                                    <option value="MasterCard">MasterCard</option>
+                                                    <option value="Visa">Visa</option>
+                                                    <option value="AmericanExpress">American Express</option>
+                                                </select>
+    
+                                                <br>
+    
+                                                <input type="date" name="card-valid" id="card-good-thru">
+    
+                                            </div>
+                                        </div>
+                                    </fieldset>
+    
+                                    <br>
+    
+                                    <span id="button-area">
+                                        <button class="order-confirmation" onclick="validation()">Confirmar Pedido</button>
+                                    </span>
+    
+                                </form>
+                            </div>
+                        </nav>
+                    </article>
+                </section>
+            </div>
         </main>
     </div>
 
     <script src="src/js/script.js"></script>
 </body>
-
 </html>
