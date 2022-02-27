@@ -574,13 +574,9 @@
 
         font-size: 1.7rem;
     }
-
-    .input:valid {
-        border: 2px solid #000;
-    }
-
-    .input:invalid {
-        border: 2px solid #FF0000;
+    
+    #userFullName:required:invalid {
+        border: 1px solid #FF0000;
     }
 
     .personal-data-container {
