@@ -127,7 +127,8 @@
                                             <div class="credit-card-input">
     
                                                 <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3"
-                                                    pattern="{3}">
+                                                oninvalid="setCustomValidity('Padrão inválido para CVV')"
+                                                oninput="setCustomValidity('')" pattern="{3}">
     
                                                 <br>
     
