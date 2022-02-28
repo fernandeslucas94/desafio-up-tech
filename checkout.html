@@ -15,152 +15,160 @@
 
 <body>
 
-    <div class="container">
-        <header>
-            <section id="page-header">
-                <div class="upper-section">
-                    <h1>Ótima escolha!</h1>
-                    <p>Obrigado por comprar na RCHLO! <br> Preencha seus dados para efetivar a compra.</p>
-                </div>
-            </section>
-        </header>
-
-        <main>
-            <section id="item-description">
-                <div class="item-info-data">
-
-                    <div class="order-title">
-                        <h2>Sua Compra</h2>
-                    </div>
-
-                    <figure>
-                        <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
-                        alt="Camiseta Manga Curta" title="Camiseta Manga Curta Simpsons" id="t-shirt-image">
-                    </figure>
-                    
-                    <article id="item-description">
-                        <div class="item-description-area">
-                            <strong>Produto:</strong>
-                            <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
-
-                            <strong>Cor:</strong>
-                            <p>Branco</p>
-
-                            <strong>Tamanho:</strong>
-                            <p>G</p>
-
-                            <strong>Preço:</strong>
-                            <p>R$ 69,90</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <div class="quantity-and-form-container">
-                <section id="item-quantity">
-                    <article>
-                        <div class="item-quantity-info">
-                            <label for="">Quantidade:</label> <br>
-                            <select id="item-quantity-select">
-                                <option value=""></option>
-                            </select> <br><br>
-    
-                            <p>Total:</p>
-                            <div class="total-price">
-                                <p>R$</p>
-                                <span id="total">R$ 69,90</span>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                
-                <section id="page-form">
-                    <article>
-                        <nav>
-                            <div class="form-area">
-                                <form action="" method="post">
-                                    <fieldset id="personal-data">
-                                        <legend>Dados Pessoais</legend>
-    
-                                        <div class="personal-data-container">
-                                            <div class="personal-data-label">
-                                                <label>Nome completo:</label> <br><br>
-                                                <label>Email:</label> <br><br>
-                                                <label for="">CPF:</label>
-                                            </div>
-    
-                                            <div class="personal-data-fields">
-                                                <input type="text" name="userFullName" id="userFullName" maxlength="200"
-                                                    oninvalid="setCustomValidity('Por favor, informe seu nome completo')"
-                                                    oninput="setCustomValidity('')" required> <br><br>
-    
-    
-                                                <input type="email" name="userEmail" id="userEmail" maxlength="300"
-                                                    oninvalid="setCustomValidity('Informe seu email corretamente')"
-                                                    oninput="setCustomValidity('')" required> <br><br>
-    
-                                                <input type="text" name="userCPF" id="userCPF" maxlength="14"
-                                                    placeholder="000.000.000-00" pattern="[0-9]{11}" 
-                                                    oninvalid="setCustomValidity('Informe seu CPF')"
-                                                    oninput="setCustomValidity('')" required>
-                                            </div>
-                                        </div>
-    
-                                        <div class="checkbox-area">
-                                            <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox">
-                                            <label>Quero receber a newsletter da RCHLO!</label>
-                                        </div>
-                                    </fieldset>
-    
-                                    <br>
-    
-                                    <fieldset id="credit-card-data">
-                                        <legend>Cartão de Crédito</legend>
-    
-                                        <div class="credit-card-area-container">
-                                            <div class="credit-card-labels">
-                                                <label for="">Número (CVV):</label> <br>
-                                                <label for="">Bandeira:</label> <br>
-                                                <label for="">Vencimento:</label>
-                                            </div>
-    
-                                            <div class="credit-card-input">
-    
-                                                <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3"
-                                                oninvalid="setCustomValidity('Padrão inválido para CVV')"
-                                                oninput="setCustomValidity('')" pattern="{3}">
-    
-                                                <br>
-    
-                                                <select name="credit-card-flag" id="credit-card-flag"> <br>
-                                                    <option value="MasterCard">MasterCard</option>
-                                                    <option value="Visa">Visa</option>
-                                                    <option value="AmericanExpress">American Express</option>
-                                                </select>
-    
-                                                <br>
-    
-                                                <input type="date" name="card-valid" id="card-good-thru">
-    
-                                            </div>
-                                        </div>
-                                    </fieldset>
-    
-                                    <br>
-    
-                                    <span id="button-area">
-                                        <button class="order-confirmation" onclick="validation()">Confirmar Pedido</button>
-                                    </span>
-    
-                                </form>
-                            </div>
-                        </nav>
-                    </article>
-                </section>
+<!-- This container div, contains the whole content of the page -->
+<div class="container">
+    <header>
+        <section id="page-header">
+            <div class="upper-section">
+                <h1>Ótima escolha!</h1>
+                <p>Obrigado por comprar na RCHLO! <br> Preencha seus dados para efetivar a compra.</p>
             </div>
-        </main>
-    </div>
+        </section>
+    </header>
 
-    <script src="src/js/script.js"></script>
+    <main>
+
+        <!-- Here is the beginning of the section responsable to contain the image, and the item description -->
+        <section id="item-description">
+
+            <!-- item-info-data is the div that contains the content in this section -->
+            <div class="item-info-data">
+
+                <div class="order-title">
+                    <h2>Sua Compra</h2>
+                </div>
+
+                <figure>
+                    <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
+                    alt="Camiseta Manga Curta" title="Camiseta Manga Curta Simpsons" id="t-shirt-image">
+                </figure>
+                
+                <article id="item-description">
+                    <div class="item-description-area">
+                        <strong>Produto:</strong>
+                        <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+
+                        <strong>Cor:</strong>
+                        <p>Branco</p>
+
+                        <strong>Tamanho:</strong>
+                        <p>G</p>
+
+                        <strong>Preço:</strong>
+                        <p>R$ 69,90</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- The div quantity-and-form-container is responsible to contain the quantity-info and form sections, to make it easy to give a position aside the item-description section -->
+        <div class="quantity-and-form-container">
+            <section id="item-quantity">
+                <article>
+                    <div class="item-quantity-info">
+                        <label for="">Quantidade:</label> <br>
+                        <select id="item-quantity-select">
+                            <option value=""></option>
+                        </select> <br><br>
+
+                        <p>Total:</p>
+                        <div class="total-price">
+                            <p>R$</p>
+                            <span id="total">R$ 69,90</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
+            <section id="page-form">
+                <article>
+                    <nav>
+                        <div class="form-area">
+                            <form action="" method="post">
+                                <fieldset id="personal-data">
+                                    <legend>Dados Pessoais</legend>
+
+                                    <div class="personal-data-container">
+                                        <div class="personal-data-label">
+                                            <label>Nome completo:</label> <br><br>
+                                            <label>Email:</label> <br><br>
+                                            <label for="">CPF:</label>
+                                        </div>
+
+                                        <div class="personal-data-fields">
+                                            <input type="text" name="userFullName" id="userFullName" maxlength="200"
+                                                oninvalid="setCustomValidity('Por favor, informe seu nome completo')"
+                                                oninput="setCustomValidity('')" required> <br><br>
+
+
+                                            <input type="email" name="userEmail" id="userEmail" maxlength="300"
+                                                oninvalid="setCustomValidity('Informe seu email corretamente')"
+                                                oninput="setCustomValidity('')" required> <br><br>
+
+                                            <input type="text" name="userCPF" id="userCPF" maxlength="14"
+                                                placeholder="000.000.000-00" pattern="[0-9]{11}" 
+                                                oninvalid="setCustomValidity('Informe seu CPF')"
+                                                oninput="setCustomValidity('')" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkbox-area">
+                                        <input type="checkbox" name="newsletterCheckBox" id="newsletterCheckBox">
+                                        <label>Quero receber a newsletter da RCHLO!</label>
+                                    </div>
+                                </fieldset>
+
+                                <br>
+
+                                <fieldset id="credit-card-data">
+                                    <legend>Cartão de Crédito</legend>
+
+                                    <div class="credit-card-area-container">
+                                        <div class="credit-card-labels">
+                                            <label for="">Número (CVV):</label> <br>
+                                            <label for="">Bandeira:</label> <br>
+                                            <label for="">Vencimento:</label>
+                                        </div>
+
+                                        <div class="credit-card-input">
+
+                                            <input type="text" name="credit-card-cvv" id="credit-card-cvv" maxlength="3"
+                                            oninvalid="setCustomValidity('Padrão inválido para CVVa')"
+                                            oninput="setCustomValidity('')" pattern="{3}">
+
+                                            <br>
+
+                                            <select name="credit-card-flag" id="credit-card-flag"> <br>
+                                                <option value="MasterCard">MasterCard</option>
+                                                <option value="Visa">Visa</option>
+                                                <option value="AmericanExpress">American Express</option>
+                                            </select>
+
+                                            <br>
+
+                                            <input type="date" name="card-valid" id="card-good-thru">
+
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <br>
+
+                                <span id="button-area">
+                                    <button class="order-confirmation" onclick="validation()">Confirmar Pedido</button>
+                                </span>
+
+                            </form>
+                        </div>
+                    </nav>
+                </article>
+            </section>
+        </div>
+        <!-- Here is the end of quantity-and-form-container <div> -->
+            
+    </main>
+</div>
+
+<script src="src/js/script.js"></script>
 </body>
 </html>
